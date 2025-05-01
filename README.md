@@ -124,4 +124,3 @@ This project is open-source and free to use under the MIT License.
 ## 🙌 Credits
 
 Crafted with 💙 using Flask, Docker, Redis, and PostgreSQL.
-```
