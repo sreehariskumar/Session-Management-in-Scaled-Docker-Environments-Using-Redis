@@ -38,7 +38,7 @@ The services used:
 ### 1. Clone the repository
 
 ```
-git clone [https://github.com/your-username/session-management-docker.git](https://github.com/sreehariskumar/Session-Management-in-Scaled-Docker-Environments-Using-Redis.git)
+git clone https://github.com/sreehariskumar/Session-Management-in-Scaled-Docker-Environments-Using-Redis.git
 cd Session-Management-in-Scaled-Docker-Environments-Using-Redis
 ```
 
