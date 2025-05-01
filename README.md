@@ -6,6 +6,20 @@ The application uses two Flask containers (`frontend1` and `frontend2`) behind a
 
 ---
 
+## 🧩 Folder Structure
+
+```
+.
+├── app/
+│   ├── app.py               # Flask app logic
+│   ├── templates/           # HTML templates
+│   └── requirements.txt     # Python dependencies
+├── nginx/
+│   └── nginx.conf           # Load balancer config
+├── docker-compose.yml       # Service definitions
+└── README.md                # This file
+```
+
 ## Architecture Diagram
 
 ![Session-App-Architecture](https://github.com/sreehariskumar/Session-Management-in-Scaled-Docker-Environments-Using-Redis/blob/main/Session-App-Architecture%20Diagram.png)
@@ -69,22 +83,6 @@ docker-compose logs -f
 3. Login with your credentials
 4. Refresh the page multiple times or open in new tabs — you’ll notice the *container hostname* changes but your session persists!
 5. Click Logout to clear the session (also removed from Redis)
-
----
-
-## 🧩 Folder Structure
-
-```
-.
-├── app/
-│   ├── app.py               # Flask app logic
-│   ├── templates/           # HTML templates
-│   └── requirements.txt     # Python dependencies
-├── nginx/
-│   └── nginx.conf           # Load balancer config
-├── docker-compose.yml       # Service definitions
-└── README.md                # This file
-```
 
 ---
 
