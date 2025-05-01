@@ -6,23 +6,9 @@ The application uses two Flask containers (`frontend1` and `frontend2`) behind a
 
 ---
 
-## 🛠️ How It Works
+## Architecture Diagram
 
-```text
-         [ User ]
-            |
-          [ NGINX ]
-            |
-    ---------------------
-    |                   |
-[Frontend1]         [Frontend2]
-    |                   |
-    ---------------------
-             |
-    ---------------------
-    |                   |
-[ PostgreSQL ]      [ Redis ]
-```
+![Session-App-Architecture](https://github.com/sreehariskumar/Session-Management-in-Scaled-Docker-Environments-Using-Redis/blob/main/Session-App-Architecture%20Diagram.png)
 
 - **NGINX** routes incoming traffic to either frontend container.
 - **Flask containers** handle user registration, login, and dashboard rendering.
