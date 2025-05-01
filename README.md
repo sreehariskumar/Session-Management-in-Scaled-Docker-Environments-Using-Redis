@@ -1,4 +1,4 @@
-# 🧠 Session Management in Scaled Docker Environments Using Redis
+# Session Management in Scaled Docker Environments Using Redis
 
 This project demonstrates how to manage user sessions in a scalable Docker environment using **Flask**, **PostgreSQL**, **Redis**, and **NGINX**. It simulates a login-based blog or dashboard system where users must register and log in to access content.
 
