@@ -70,7 +70,13 @@ This will:
 
 ---
 
-### 3. Check the application logs
+### 3. Create a database table to store the credentials 
+
+```
+docker exec -it postgres psql -U user -d auth_db -c "CREATE TABLE users (id SERIAL PRIMARY KEY, username TEXT UNIQUE NOT NULL, password TEXT NOT NULL);"
+```
+
+### 4. Check the application logs
 
 ```
 docker-compose logs -f
